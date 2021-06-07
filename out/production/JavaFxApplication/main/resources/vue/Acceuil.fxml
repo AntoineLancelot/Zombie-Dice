@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="750.0" styleClass="menu-btn" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controleur.Acceuil">
+   <children>
+      <ImageView fitHeight="213.0" fitWidth="501.0" layoutX="139.0" layoutY="-6.0">
+         <image>
+            <Image url="@../img/Title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="378.0" fitWidth="238.0" layoutX="43.0" layoutY="228.0">
+         <image>
+            <Image url="@../img/Zombie.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="43.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zombie dice est un jeu de dé rapide et facile pour les fans de zombies." wrappingWidth="695.3407897949219">
+         <font>
+            <Font name="Luminari" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="391.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de joueur : " wrappingWidth="201.11117553710938">
+         <font>
+            <Font name="Luminari" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Nbjoueur" layoutX="578.0" layoutY="272.0" prefHeight="26.0" prefWidth="34.0" />
+      <Text fill="WHITE" layoutX="391.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir le niveau de difficulté : " wrappingWidth="321.05596923828125">
+         <font>
+            <Font name="Luminari" size="20.0" />
+         </font>
+      </Text>
+      <VBox layoutX="391.0" layoutY="368.0" prefHeight="120.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <RadioButton fx:id="facile"  mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Facile" textFill="WHITE">
+               <font>
+                  <Font name="Luminari" size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="moyen" mnemonicParsing="false" text="Moyen" textFill="WHITE">
+               <font>
+                  <Font name="Luminari" size="17.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="difficile" mnemonicParsing="false" text="Difficile" textFill="WHITE">
+               <font>
+                  <Font name="Luminari" size="17.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="btnScene1" layoutX="392.0" layoutY="517.0" mnemonicParsing="false" onAction="#ChangeScene" prefHeight="45.0" prefWidth="149.0" styleClass="menu-btn" stylesheets="@../style/style.css" text="JOUER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.32" height="43.26" radius="29.8975" width="78.33">
+               <color>
+                  <Color red="0.19078947603702545" green="0.18902289867401123" blue="0.18902289867401123" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <font>
+            <Font name="Luminari" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnQuit" layoutX="552.0" layoutY="517.0" mnemonicParsing="false" onAction="#QuitBtn" prefHeight="45.0" prefWidth="149.0" styleClass="menu-btn" stylesheets="@../style/style.css" text="QUITTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.32" height="43.26" radius="29.8975" width="78.33">
+               <color>
+                  <Color red="0.19078947603702545" green="0.18902289867401123" blue="0.18902289867401123" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <font>
+            <Font name="Luminari" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="261.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jouer jusqu'à 6 joueurs !" wrappingWidth="695.3407897949219">
+         <font>
+            <Font name="Luminari" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
